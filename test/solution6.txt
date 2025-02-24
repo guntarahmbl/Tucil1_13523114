@@ -1,0 +1,8 @@
+A G G G C 
+A A B C C 
+D D B B Z 
+D E E Z Z 
+E E E Z Z 
+
+Execution time: 12.0527 ms
+Total cases considered: 7360

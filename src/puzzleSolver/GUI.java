@@ -176,7 +176,7 @@ public class GUI extends Application {
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Text File", "*.txt"));
         File file = fileChooser.showSaveDialog(null);
         if (file != null) {
-            IO.saveSolutionAsFile(solver.getBoard(), solver.getExecutionTimeMs(), solver.getCasesConsidered());
+            IO.saveSolutionAsFile(solver.getBoard(), solver.getExecutionTimeMs(), solver.getCasesConsidered(), file);
             System.out.println("Solution saved as: " + file.getAbsolutePath());
             warningLabel.setText("");
         }

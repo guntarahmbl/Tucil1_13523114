@@ -64,8 +64,8 @@ public class IO {
         return pieces;
     }
 
-    public static void saveSolutionAsFile(char[][] board, double executionTime, int casesConsidered) {
-        try (FileWriter writer = new FileWriter("solution.txt")) {
+    public static void saveSolutionAsFile(char[][] board, double executionTime, int casesConsidered, File file) {
+        try (FileWriter writer = new FileWriter(file.getAbsolutePath())) {
             for (char[] row : board) {
                 for (char cell : row) {
                     writer.write(cell + " ");
@@ -77,7 +77,7 @@ public class IO {
             writer.write("\nExecution time: " + executionTime + " ms\n");
             writer.write("Total cases considered: " + casesConsidered + "\n");
 
-            System.out.println("Solution saved to solution.txt.");
+            System.out.println("Solution saved to " + file.getName());
         } catch (IOException e) {
             System.out.println("Error saving solution: " + e.getMessage());
         }

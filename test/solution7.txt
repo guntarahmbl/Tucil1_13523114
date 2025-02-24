@@ -1,5 +1,5 @@
 A B C 
 D E F 
 
-Execution time: 0.1042 ms
+Execution time: 0.0609 ms
 Total cases considered: 7

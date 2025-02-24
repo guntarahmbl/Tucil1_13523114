@@ -167,7 +167,7 @@ class Solver {
             System.out.print("Do you want to save the solution to a text file? (yes/no): ");
             String response = scanner.nextLine().trim().toLowerCase();
             if (response.equals("yes")) {
-                IO.saveSolutionAsFile(this.board, executionTimeMs, casesConsidered);
+                IO.saveSolutionAsFile(this.board, executionTimeMs, casesConsidered, new File("solution.txt"));
                 System.out.println("Solution saved to solution.txt.");
             } else {
                 System.out.println("Solution not saved.");

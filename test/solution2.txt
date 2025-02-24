@@ -1,0 +1,6 @@
+A B B 
+A A B 
+Z Z Z 
+
+Execution time: 0.0681 ms
+Total cases considered: 4
