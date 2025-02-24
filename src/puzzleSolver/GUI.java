@@ -99,7 +99,9 @@ public class GUI extends Application {
         Label title = new Label("IQ Puzzler Pro Solver");
         title.setStyle("-fx-font-size: 35px; -fx-font-weight: bold; -fx-text-fill: #000072; -fx-padding: 10px;");
         title.setAlignment(Pos.CENTER);
-        VBox rightButtonsl = new VBox(5, inputSolveBox, warningLabel,infoBox);
+
+        VBox rightButtonsl = new VBox(5, inputSolveBox, warningLabel, infoBox);
+        rightButtonsl.setAlignment(Pos.CENTER);
         VBox rightPanel = new VBox(15, title, rightButtonsl);
         rightPanel.setAlignment(Pos.CENTER);
 
@@ -128,8 +130,8 @@ public class GUI extends Application {
 
     private void parsePuzzleFile(File file) {
         try (Scanner scanner = new Scanner(file)) {
-            int boardWidth = scanner.nextInt();
             int boardHeight = scanner.nextInt();
+            int boardWidth = scanner.nextInt();
             List<List<String>> rawPieces = IO.readInput(file.getName());
             solver = new Solver(boardWidth, boardHeight, rawPieces);
         } catch (Exception e) {
@@ -142,17 +144,22 @@ public class GUI extends Application {
             warningLabel.setText("Error: Input file lebih dulu!");
             return;
         }
-
+        double startTime = System.nanoTime();
         if (solver.solve(0)) {
+            long endTime = System.nanoTime();
+            double executionTimeMs = (endTime - startTime) / 1_000_000.0;
+            solver.setExecutionTimeMs(executionTimeMs);
             solver.printBoard();
             char[][] board = solver.getBoard();
             BufferedImage image = IO.makeImage(board);
             solutionView.setImage(SwingFXUtils.toFXImage(image, null));
 
             // Update labels
-            executionTimeLabel.setText("Waktu Pencarian: " + solver.getExecutionTimeMs() + " ms");
+            executionTimeLabel.setText("Waktu Pencarian: " + String.format("%.2f", executionTimeMs) + " ms");
             casesConsideredLabel.setText("Banyak kasus yang ditinjau: " + solver.getCasesConsidered());
             warningLabel.setText("");
+        } else {
+            warningLabel.setText("No solution found!");
         }
     }
 

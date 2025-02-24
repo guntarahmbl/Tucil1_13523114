@@ -21,15 +21,15 @@ public class IO {
                 throw new IllegalArgumentException("Invalid input format: Missing board dimensions");
             }
 
-            int boardWidth = Integer.parseInt(boardInfo[0]);
-            int boardHeight = Integer.parseInt(boardInfo[1]);
+            int boardWidth = Integer.parseInt(boardInfo[1]);
+            int boardHeight = Integer.parseInt(boardInfo[0]);
 
             pieces.add(Arrays.asList(String.valueOf(boardWidth), String.valueOf(boardHeight)));
 
             String line;
             List<String> currentPiece = new ArrayList<>();
             Character lastBlock = null;
-
+            reader.readLine();
             while ((line = reader.readLine()) != null) {
                 if (line.isEmpty()) continue;
 

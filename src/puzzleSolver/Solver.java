@@ -11,7 +11,7 @@ class Solver {
     private final char[][] board;
     private final List<Block> blocks = new ArrayList<>();
     private int casesConsidered = 0;
-    private double executionTimeMs;
+    private double executionTimeMs = 0;
 
 
 
@@ -46,7 +46,10 @@ class Solver {
     public char[][] getBoard() {
         return board;
     }
-    public double getExecutionTimeMs(){
+    public void setExecutionTimeMs(double executionTimeMs) {
+        this.executionTimeMs = executionTimeMs;
+    }
+    public double getExecutionTimeMs() {
         return executionTimeMs;
     }
     public int getCasesConsidered(){

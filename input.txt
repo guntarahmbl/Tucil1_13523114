@@ -1,4 +1,5 @@
-5 5 7
+5 5 8
+DEFAULT
 A
 AA
 B
@@ -14,3 +15,4 @@ FF
 FF
 F
 GGG
+HHHH

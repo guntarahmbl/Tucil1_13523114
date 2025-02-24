@@ -1,8 +1,8 @@
-A G G G D 
-A A B D D 
-C C B B E 
-C F F E E 
-F F F E E 
+. . . . 
+. . . . 
+. . . . 
+. . . . 
+. . . . 
 
 Execution time: 0.0 ms
-Total cases considered: 7394
+Total cases considered: 3797

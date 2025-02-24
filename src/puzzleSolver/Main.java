@@ -12,8 +12,8 @@ public class Main {
             return;
         }
 
-        int boardWidth = Integer.parseInt(input.get(0).get(0));
-        int boardHeight = Integer.parseInt(input.get(0).get(1));
+        int boardWidth = Integer.parseInt(input.get(0).get(1));
+        int boardHeight = Integer.parseInt(input.get(0).get(0));
 
         Solver solver = new Solver(boardWidth, boardHeight, input);
         solver.solvePuzzle();
