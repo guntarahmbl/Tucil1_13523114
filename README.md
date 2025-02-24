@@ -54,15 +54,15 @@ Hal yang harus dipasang terlebih dahulu adalah:
 
 4. **Jalankan program melalui GUI**
 
-## ** Cara Menggunakan**
+## **Cara Menggunakan**
 
 1. **Jalankan program melalui GUI** .
 2. Masukkan file input berupa file txt yang berisi problem yang ingin diselesaikan. Pilih darimana saja.
 3. Klik tombol solve untuk mendapatkan solusi pada GUI
 4. Anda dapat menyimpan solusi yang diberikan baik dalam bentuk gambar (.png) atau text document (.txt) dengan cara klik tombol simpan di bawah solusi
 
-## ** Author**
-** Guntara Hambali**
+## **Author**
+**Guntara Hambali**
 
 **NIM 13523114**
 
