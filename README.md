@@ -11,13 +11,15 @@ Struktur program adalah sebagai berikut:
 ```sh
 /Tucil1_13523114
 ├── /bin                # Executable file
-│   ├── Block.jar    
-│   ├── IO.jar
-│   ├── GUI.jar       
-│   ├── Main.jar    
-│   └── Solver.jar    
+│   ├── GUI_Tucil1_13523114.jar    
+│   ├── CLI_Tucil1_13523114.jar    
 ├── /doc                # Laporan
-├── /output             
+├── /output   
+│   ├── Block.class   
+│   ├── IO.class   
+│   ├── GUI.class       
+│   ├── Main.class     
+│   └── Solver.class         
 ├── /src                # Source code program
 │   ├── Block.java     
 │   ├── IO.java   
