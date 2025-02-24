@@ -1,5 +1,8 @@
-A B C 
-D E F 
+A G G G C 
+A A B C C 
+D D B B Z 
+D E E Z Z 
+E E E Z Z 
 
-Execution time: 0.1042 ms
-Total cases considered: 7
+Execution time: 149.9318 ms
+Total cases considered: 7360

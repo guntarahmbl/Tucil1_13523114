@@ -1,6 +1,6 @@
 #  IQ Puzzler Pro Solver
 # Tugas Kecil 1 Strategi Algoritma IF2211 Algoritma Brute Force
-
+## **Program akan berjalan maksimal menggunakan GUI. Jika menjalankan melalui CLI, pastikan file input bernama input.txt**
 ## Deskripsi Program
 Program ini merupakan solver dari permainan IQ Puzzler Pro yang menuntut pemain untuk menyusun blok-blok atau piece ke dalam suatu bord hingga suatu bord terisi penuh.
 Blok-blok dapat diatur sedemikian rupa (diputar, dicerminkan, diganti posisinya) sehingga memenuhi kriteria end game. Pada program ini, digunakan algoritma brute force
@@ -33,7 +33,7 @@ Hal yang harus dipasang terlebih dahulu adalah:
 - **Java 9 atau di atasnya**
 - **Modul JavaFX yang diunduh dari gluon dan dipasang**
 
-### Cara instalasi
+### Cara instalasi (CLI)
 1. **Clone repository**
 
 ```bash
@@ -46,13 +46,12 @@ Hal yang harus dipasang terlebih dahulu adalah:
   cd Tucil1_13523114
 ```
 
-3. **Compile program**
+3. **Jalankan program melalui CLI atau GUI**
 
 ```bash
-  javac -d bin -sourcepath src src/*.java
+  java -jar CLI_Tucil1_13523114.jar 
+  java -jar GUI_Tucil1_13523114.jar 
 ```
-
-4. **Jalankan program melalui GUI**
 
 ## **Cara Menggunakan**
 
