@@ -45,14 +45,15 @@ Hal yang harus dipasang terlebih dahulu adalah:
 2. **Pergi ke directory /Tucil1_13523114**
 
 ```bash
-  cd Tucil1_13523114
+  cd Tucil1_13523114/bin
 ```
 
 3. **Jalankan program melalui CLI atau GUI**
 
 ```bash
   java -jar CLI_Tucil1_13523114.jar 
-  java -jar GUI_Tucil1_13523114.jar 
+  java --module-path "C:\javafx\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -jar GUI_Tucil1_13523114.jar
+
 ```
 
 ## **Cara Menggunakan**
